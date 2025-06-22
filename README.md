@@ -15,7 +15,7 @@ This is a Laravel-based project that integrates with the Google Drive API to all
 
 ## 🧰 Tech Stack
 
-- Laravel 11
+- Laravel 12
 - Google Drive API
 - Google API PHP Client
 - Laravel Socialite (for OAuth)
@@ -34,10 +34,12 @@ cd laravel-google-drive-uploader
 ### 🛠️ Install Dependencies
 composer install
 cp .env.example .env
+composer require google/apiclient
 php artisan key:generate
 
 ### ⚙️ Set Up Environment Variables:
 In your .env file, add the following:
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
-GOOGLE_REDIRECT_URI=http://localhost:8000/auth/google/callback
+GOOGLE_REDIRECT_URI=http://localhost:8000/google/callback
+GOOGLE_REDIRECT_URI=http://localhost:8000/api/google/callback(Use When Using Api's)
