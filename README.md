@@ -9,7 +9,7 @@ This is a Laravel-based project that integrates with the Google Drive API to all
 - 📁 Create folders dynamically (optional)
 - 🧠 Store and reuse access tokens
 - 📡 Uses official Google Client API
-- 🛠️ Built with Laravel 11+
+- 🛠️ Built with Laravel 12+
 
 ---
 
